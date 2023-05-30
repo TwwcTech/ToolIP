@@ -6,6 +6,9 @@ from resources.statics import SysVariables as sv
 from resources.statics import ToolIPVariables as tipv
 from resources.statics import ConsoleResponses as conr
 
+__author__ = "twwc.tech"
+__version__ = "1.0"
+
 if __name__ == "__main__":
     try:
         while True:
@@ -19,8 +22,8 @@ if __name__ == "__main__":
                     print(
                         f"\n\n{ProcessIP(url=tipv.URL).getinfo_andfomat()}\n\n"
                     )
-                    coninput: str = input("\n\nPress 'Enter' to continue")
+                    coninput: str = input(conr.CONTINUE)
                 case "2": clearcon(), exit(0)
-                case _: print("Not an option please, choose an option [1-2]"), sleep(1.5)
+                case _: print(conr.BADENTRY), sleep(1.5)
     except KeyboardInterrupt:
         print(conr.KBI)
