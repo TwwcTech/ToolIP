@@ -18,4 +18,5 @@ class ProcessIP:
             "TimeZone": [f"{info['time_zone']}"],
             "ISP": [f"{info['asn_org']}"]
         }
-        return pd.DataFrame(format_frame)
+        pd.set_option("display.max_columns", None)
+        return(pd.DataFrame(format_frame))

@@ -19,7 +19,7 @@ if __name__ == "__main__":
                     print(
                         f"\n\n{ProcessIP(url=tipv.URL).getinfo_andfomat()}\n\n"
                     )
-                    coninput: str = input("Press 'Enter' to continue")
+                    coninput: str = input("\n\nPress 'Enter' to continue")
                 case "2": clearcon(), exit(0)
                 case _: print("Not an option please, choose an option [1-2]"), sleep(1.5)
     except KeyboardInterrupt:
